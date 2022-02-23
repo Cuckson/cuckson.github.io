@@ -1,12 +1,32 @@
-<center>
-<object type="application/x-shockwave-flash" 
-  data="clarinets.swf" 
-  width="800" height="600">
-  <param name="movie" value="clarinets.swf" />
-  <param name="quality" value="high"/>
-</object>
-<center>
 <html>
-  <body bgcolor="blue">
-  </body>
+
+<!-- Import all the libraries first -->
+<script src="https://code.createjs.com/1.0.0/createjs.js"></script>
+<script src="gamesrc/html5kbo.js"></script>
+<script>
+    function init() {
+        // initialize game
+        var games = [
+            {
+                canvasid: "throwdown",              // canvas ID
+                song: "audio.mp3",              // path of audio file
+                chart: {
+                    src: "safe.sm",            // path of .sm file
+                    type: "4k",                     // 4k or 6k
+                    diff: 'Challenge',                   // chart difficulty name
+                    highlights: [                   // list all of the higlights
+                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
+                    ],
+                    chartArtist: 'Cuckson'        // chart artist
+                },
+                downloadURL: '<download url link>'  // (optional) download URL link
+            }
+        ]
+        html5kbo(games);
+    }
+</script>
+
+<body onload="init()">
+	<canvas id="throwdown" width="800" height="600"></canvas>
+</body>
 </html>
