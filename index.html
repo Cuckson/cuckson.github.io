@@ -1,5 +1,4 @@
 <html>
-
 <!-- Import all the libraries first -->
 <script src="https://code.createjs.com/1.0.0/createjs.js"></script>
 <script src="gamesrc/html5kbo.js"></script>
@@ -8,10 +7,40 @@
         // initialize game
         var games = [
             {
-                canvasid: "throwdown",              // canvas ID
-                song: "audio.mp3",              // path of audio file
+                canvasid: "game1",              // canvas ID
+                song: "data/audio.mp3",              // path of audio file
                 chart: {
-                    src: "safe.sm",            // path of .sm file
+                    src: "data/safe.sm",            // path of .sm file
+                    type: "4k",                     // 4k or 6k
+                    diff: 'Challenge',                   // chart difficulty name
+                    highlights: [                   // list all of the higlights
+                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
+                    ],
+                    chartArtist: 'Cuckson'        // chart artist
+                },
+                downloadURL: '<download url link>'  // (optional) download URL link
+            },
+
+            {
+                canvasid: "game2",              // canvas ID
+                song: "data/audio.mp3",              // path of audio file
+                chart: {
+                    src: "data/safe.sm",            // path of .sm file
+                    type: "4k",                     // 4k or 6k
+                    diff: 'Challenge',                   // chart difficulty name
+                    highlights: [                   // list all of the higlights
+                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
+                    ],
+                    chartArtist: 'Cuckson'        // chart artist
+                },
+                downloadURL: '<download url link>'  // (optional) download URL link
+            },
+
+            {
+                canvasid: "game3",              // canvas ID
+                song: "data/audio.mp3",              // path of audio file
+                chart: {
+                    src: "data/safe.sm",            // path of .sm file
                     type: "4k",                     // 4k or 6k
                     diff: 'Challenge',                   // chart difficulty name
                     highlights: [                   // list all of the higlights
@@ -27,6 +56,18 @@
 </script>
 
 <body onload="init()">
-	<canvas id="throwdown" width="800" height="600"></canvas>
+	<canvas id="game1" width="800" height="600"></canvas>
+	<br><hr><br>
+	<canvas id="game2" width="800" height="600"></canvas>
+	<br><hr><br>
+	<canvas id="game3" width="800" height="600"></canvas>
+    <style>
+    canvas {
+        padding: 0;
+        margin: auto;
+        display: block;
+        width: 800px;
+    }   
+    </style>
 </body>
 </html>
