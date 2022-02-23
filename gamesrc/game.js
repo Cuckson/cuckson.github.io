@@ -320,7 +320,7 @@ class Game {
 		// cd
 		var image = new createjs.Bitmap("data/cd.png");
 		image.x = this.width/2 + 130;
-		image.y = 300;
+		image.y = 340;
 		this.mainMenuGfx.addChild(image);
 		// add chart artist text
 		if (this.chartConfig.chartArtist) {
