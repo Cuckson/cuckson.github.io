@@ -318,9 +318,8 @@ class Game {
 		artistText.textAlign = "center";
 		this.mainMenuGfx.addChild(artistText);
 		// cd
-		var image = new Image();
-		image.src = "data/cd.png";
-		image.x = 300;
+		var image = new createjs.Bitmap("data/cd.png");
+		image.x = this.width/2;
 		image.y = 400;
 		this.mainMenuGfx.addChild(image);
 		// add chart artist text
