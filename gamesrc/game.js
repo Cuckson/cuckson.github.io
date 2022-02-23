@@ -320,6 +320,8 @@ class Game {
 		// cd
 		var image = new Image();
 		image.src = "data/cd.png";
+		image.x = this.width/2;
+		image.y = 400;
 		this.mainMenuGfx.addChild(image);
 		// add chart artist text
 		if (this.chartConfig.chartArtist) {
