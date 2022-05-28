@@ -6,36 +6,7 @@
     function init() {
         // initialize game
         var games = [
-            {
-                canvasid: "game1",              // canvas ID
-                song: "data/audio.mp3",              // path of audio file
-                chart: {
-                    src: "data/safe.sm",            // path of .sm file
-                    type: "4k",                     // 4k or 6k
-                    diff: 'Challenge',                   // chart difficulty name
-                    highlights: [                   // list all of the higlights
-                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
-                    ],
-                    chartArtist: 'Cuckson'        // chart artist
-                },
-                downloadURL: '<download url link>'  // (optional) download URL link
-            },
-
-            {
-                canvasid: "game2",              // canvas ID
-                song: "data/audio.mp3",              // path of audio file
-                chart: {
-                    src: "data/safe.sm",            // path of .sm file
-                    type: "4k",                     // 4k or 6k
-                    diff: 'Challenge',                   // chart difficulty name
-                    highlights: [                   // list all of the higlights
-                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
-                    ],
-                    chartArtist: 'Cuckson'        // chart artist
-                },
-                downloadURL: '<download url link>'  // (optional) download URL link
-            },
-
+    	{
             {
                 canvasid: "game3",              // canvas ID
                 song: "data/audio.mp3",              // path of audio file
@@ -44,7 +15,7 @@
                     type: "4k",                     // 4k or 6k
                     diff: 'Challenge',                   // chart difficulty name
                     highlights: [                   // list all of the higlights
-                        [68,100]                    // [starting beat, ending beat, (optional) hex color]
+                        [68,100, 0x00FF00]                    // [starting beat, ending beat, (optional) hex color]
                     ],
                     chartArtist: 'Cuckson'        // chart artist
                 },
